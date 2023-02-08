@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  height: 2rem;
+  min-width: 2rem;
+  margin: 0.4rem;
+  background: skyblue;
+  border-radius: 0.2rem;
+  border: 0.5px solid gray;
+  font-weight: bold;
+}
+
+.btn.btnAdd {
+  background: rgb(159, 227, 227);
+}
+
+.countBox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
