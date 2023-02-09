@@ -1,21 +1,13 @@
 import React, { memo } from "react";
-const ChildComp = ({ sumOfNums }) => {
+const ChildComp = ({ printCount1 }) => {
   console.log("child component rendered");
 
   return (
     <div>
-      <p>Sum of all numbers: {sumOfNums}</p>
-      {/*   <div>
-        {list.map((num, idx) => {
-          return <span key={idx}>{`${num} `}</span>;
-        })}
-      </div> */}
+      <button onClick={printCount1} className="btn btnAdd">
+        Print count1 value
+      </button>
     </div>
   );
 };
 export default memo(ChildComp);
-// export default memo(ChildComp, areEqual);
-
-// function areEqual(prevProps, nextProps) {
-//   return prevProps.user.name === nextProps.user.name && prevProps.list === nextProps.list;
-// }
